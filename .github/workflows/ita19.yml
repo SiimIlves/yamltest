@@ -1,0 +1,14 @@
+# Workflow nimi
+name: ITA19-Pipeline
+# Siia panna kuna Workflow peaks jookma
+on: [pull]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Pipeline käivitati ${{ github.event_name }} käsul."
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+      - run: echo "Projekt on hetkel: ${{ job.status }}."
+# Erinevad tööd siia plokki
