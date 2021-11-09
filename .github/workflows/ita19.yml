@@ -8,7 +8,4 @@ jobs:
     steps:
       - run: echo "Pipeline käivitati ${{ github.event_name }} käsul."
       - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
-      - run: echo "Projekt on hetkel: ${{ job.status }}."
 # Erinevad tööd siia plokki
